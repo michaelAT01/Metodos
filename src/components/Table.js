@@ -1,6 +1,10 @@
 import React from 'react'
 import { methods } from '../logic/methods'
+
+
 export const Table = () => {
+    
+
     const [calculateXDerivate] = methods();
     const jsontable = {
         "table": calculateXDerivate('x^5-3x^4+4x^3+4x-10', 1.5, 10)
@@ -15,10 +19,11 @@ export const Table = () => {
     const itemF_x = jsontable.table['f_(x)'].map((num) =>
         <div>{num}</div>
     );
-    const iteracion = jsontable.table.ite.map((num) => 
+    const iteracion = jsontable.table.ite.map((num) =>
         <div>{num}</div>
 
     );
+
 
     return (
         <>
@@ -45,6 +50,7 @@ export const Table = () => {
             </table>
 
         </>
-
+       
     )
+   
 }

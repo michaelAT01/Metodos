@@ -1,3 +1,4 @@
+
 const nerdamer = require("nerdamer/all.min");
 
 export const methods = () => {
@@ -13,7 +14,8 @@ export const methods = () => {
 
     }
 
-    //5x^4-12x^3+12x^2+4
+
+   
     function calculateXDerivate(func, vBegin, iteraciones) {
         let spaceX = 1;
         let itercion = [];
@@ -31,18 +33,11 @@ export const methods = () => {
         }
         console.log(fx);
         return {
-            "ite":itercion,
+            "ite": itercion,
             "x": xn,
             "f(x)": fx,
             "f_(x)": f_x
         };
-
-
-        //  console.log(xn);
-        //  console.log(fx);
-        //  console.log(f_x);
-        //  console.log('adsadja')
-
     }
 
     return [calculateXDerivate];
